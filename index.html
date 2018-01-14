@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Luis Segovia">
@@ -7,73 +8,113 @@
     <meta name="keywords" content="musica, framework, bootstrap">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
     <title>Blog de Música</title>
-    
+
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-    <!-- Optional theme -->
-    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">-->
-    
+    <link rel="stylesheet" href="css/app.css">
+
     <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
 </head>
+
 <body>
     <header>
-        <div>
-            <div>
-                <img src="" alt="">
-            </div>
-            <div>
-                <ul>
-                    <li><a href="#" class="btn btn-default"><i class="fab fa-youtube"></i></a></li>
-                    <li><a href="#" class="btn btn-default"><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href="#" class="btn btn-default"><i class="fab fa-instagram"></i></a></li>
-                    <li><a href="#" class="btn btn-default"><i class="fab fa-pinterest"></i></a></li>
-                    <li><a href="#" class="btn btn-default"><i class="fab fa-twitter"></i></a></li>
-                </ul>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <img src="img/logo.png" alt="Rock clásico">
+                </div>
+                <div class="col-sm-6 text-right">
+                    <ul class="list-inline social-links">
+                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </header>
     <nav>
-        <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Artistas</a></li>
-            <li><a href="#">Grupos</a></li>
-            <li><a href="#">Top 10</a></li>
-            <li><a href="#">Letras</a></li>
-            <li><a href="#">Acordes</a></li>
-        </ul>
+        <div class="container">
+            <ul class="nav nav-pills nav-justified text-center text-uppercase">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Artistas</a></li>
+                <li><a href="#">Grupos</a></li>
+                <li><a href="#">Top 10</a></li>
+                <li><a href="#">Letras</a></li>
+                <li><a href="#">Acordes</a></li>
+            </ul>
+        </div>
     </nav>
-    <section>
-        <div>
-            <div>
+    <section class="container">
+        <div class="row">
+            <div class="col-md-8">
                 <article>
-                    <div>
-                        <h2></h2>
-                        <p></p>
-                    </div>
-                    <div>
-                        <img src="" alt="">
-                    </div>
-                    <div>
-                        <div>
-                            <img src="" alt="">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <h2>Tributo a Soda Stereo</h2>
+                            <p>Concierto que rinde homenaje a la mítica banda argentina a cargo de Miguel Samamé y su banda Rasa. Samamé fue finalista del programa Yo Soy como imitador de Gustavo Cerati y ha realizado presentaciones en varios países latinoamericanos.</p>
                         </div>
-                        <div>
-                            <textarea name="comentario">Comentario</textarea>
+                        <div class="col-md-4 pt20">
+                            <img class="img-responsive center-block" src="img/sodastereo_a.jpg" alt="Soda Stereo">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-2 col-sm-1 pt20">
+                            <img class="img-responsive img-circle" src="img/user1.jpg" alt="Perfil">
+                        </div>
+                        <div class="col-xs-10 col-sm-11 pt20">
+                            <textarea name="comentario" class="form-control" rows="3">Comentario</textarea>
                         </div>
                     </div>
                 </article>
+                <hr>
+                <article>
+                    <div class="row">
+                        <div class="col-md-4 pt20">
+                            <img class="img-responsive center-block" src="img/enanitosverdes.jpg" alt="Enanitos Verdes">
+                        </div>
+                        <div class="col-md-8">
+                            <h2>Enanitos Verdes, un grupo que no pasa de moda</h2>
+                            <p>Marciano Cantero comentó que la consolidación de Enanitos Verdes y su permanencia en el gusto popular después de más de 35 años fue la conjunción de una serie de factores. “Mendoza es un lugar sagrado, es una ciudad en la que se hace siesta, algo que es sagrado y que nadie puede interrumpir. Sin embargo, los integrantes del grupo nos conocimos y todo fue una suerte de un golpe de fortuna, de talento y de persistencia. Mira cuántos años han pasado y nosotros seguimos en la brega”, rememoró.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-2 col-sm-1 pt20">
+                            <img class="img-responsive img-circle" src="img/user2.jpg" alt="Perfil">
+                        </div>
+                        <div class="col-xs-10 col-sm-11 pt20">
+                            <textarea name="comentario" class="form-control" rows="3">Comentario</textarea>
+                        </div>
+                    </div>
+                </article>
+                <hr>
             </div>
-            <div>
-                <div>
-                    
+            <div class="col-md-4 visible-lg visible-md">
+                <div class="pt20">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fas fa-search"></i></span>
+                            <input type="text" class="form-control" placeholder="Buscar por">
+                        </div>
+                    </div>
+                    <ul class="list-group">
+                        <li class="list-group-item"><a href="#">Miguel Mateos</a></li>
+                        <li class="list-group-item"><a href="#">Pedro Suarez Vertiz</a></li>
+                        <li class="list-group-item"><a href="#">Fito Paez</a></li>
+                        <li class="list-group-item"><a href="#">Charlie Garcia</a></li>
+                        <li class="list-group-item"><a href="#">Andrés Calamaro</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
-    
-    
+
+
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
+
 </html>
